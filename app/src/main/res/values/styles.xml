@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Theme customization. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="fontFamily">@font/nunito_bold</item>
+    </style>
+
+    <style name="HeadlineCenter" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="YellowButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginBottom">@dimen/space_normal</item>
+        <item name="android:background">@drawable/yellow_button</item>
+    </style>
+</resources>

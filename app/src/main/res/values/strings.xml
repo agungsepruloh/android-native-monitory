@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Monitory</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mulai">Mulai</string>
+    <string name="monitory_membantu_anda_mengontrol_hp_anak">Monitory Membantu Anda \n Mengontrol HP Anak</string>
 </resources>
