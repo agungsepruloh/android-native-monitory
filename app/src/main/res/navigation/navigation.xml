@@ -18,5 +18,14 @@
         android:id="@+id/loginCodeFragment"
         android:name="com.agung.latihan3monitory.LoginCodeFragment"
         android:label="fragment_login_code"
-        tools:layout="@layout/fragment_login_code" />
+        tools:layout="@layout/fragment_login_code" >
+        <action
+            android:id="@+id/action_loginCodeFragment_to_biodataFragment"
+            app:destination="@id/biodataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/biodataFragment"
+        android:name="com.agung.latihan3monitory.BiodataFragment"
+        android:label="fragment_biodata"
+        tools:layout="@layout/fragment_biodata" />
 </navigation>

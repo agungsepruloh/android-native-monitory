@@ -16,7 +16,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:text="Kode Keluarga"
+            android:text="@string/kode_keluarga"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rubik_regular"
-            android:text="Ketikkan kode keluarga yang Ayah Bunda miliki disini"
+            android:text="@string/type_code"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -58,7 +58,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/signInBtn"
             style="@style/YellowButton"
             android:layout_width="0dp"
             android:layout_marginTop="@dimen/space_normal"

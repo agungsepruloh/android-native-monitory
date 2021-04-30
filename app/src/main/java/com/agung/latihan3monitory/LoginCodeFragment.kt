@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.Navigation
 import com.agung.latihan3monitory.databinding.FragmentLoginCodeBinding
 
 /**
@@ -20,6 +21,10 @@ class LoginCodeFragment : Fragment() {
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentLoginCodeBinding>(
             inflater, R.layout.fragment_login_code, container, false
+        )
+
+        binding.signInBtn.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_loginCodeFragment_to_biodataFragment)
         )
 
         return binding.root

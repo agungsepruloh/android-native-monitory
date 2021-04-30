@@ -8,4 +8,6 @@
     <string name="sign_in">Masuk</string>
     <string name="beli_kode_keluarga_disini">Beli Kode Keluarga Disini</string>
     <string name="belum_punya_kode_keluarga">Belum punya kode keluarga?</string>
+    <string name="kode_keluarga">Kode Keluarga</string>
+    <string name="type_code">Ketikkan kode keluarga yang Ayah Bunda miliki disini</string>
 </resources>
