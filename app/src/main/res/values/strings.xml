@@ -3,4 +3,9 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="mulai">Mulai</string>
     <string name="monitory_membantu_anda_mengontrol_hp_anak">Monitory Membantu Anda \n Mengontrol HP Anak</string>
+    <string name="code">A1B2C3</string>
+    <string name="agreement">Dengan menekan tombol masuk berarti Anda menyetujui <b>Ketentuan Pengguna</b> dan <b>Kebijakan Data</b> kami</string>
+    <string name="sign_in">Masuk</string>
+    <string name="beli_kode_keluarga_disini">Beli Kode Keluarga Disini</string>
+    <string name="belum_punya_kode_keluarga">Belum punya kode keluarga?</string>
 </resources>
