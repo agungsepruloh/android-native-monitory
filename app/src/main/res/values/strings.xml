@@ -10,4 +10,9 @@
     <string name="belum_punya_kode_keluarga">Belum punya kode keluarga?</string>
     <string name="kode_keluarga">Kode Keluarga</string>
     <string name="type_code">Ketikkan kode keluarga yang Ayah Bunda miliki disini</string>
+    <string name="nickname">Nama Panggilan Kamu</string>
+    <string name="age">Umur Kamu</string>
+    <string name="next">Selanjutnya</string>
+    <string name="example_age">Contoh: 12</string>
+    <string name="example_nickname">Contoh: Budi</string>
 </resources>
