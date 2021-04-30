@@ -9,10 +9,12 @@
         android:layout_height="match_parent">
 
         <fragment
-            android:id="@+id/homeFragment"
+            android:id="@+id/myNavHostFragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.agung.latihan3monitory.WelcomeFragment" />
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/navigation" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
