@@ -6,9 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.agung.latihan3monitory.databinding.FragmentBiodataBinding
+import java.util.*
 
 /**
  * A simple [Fragment] subclass.
@@ -18,26 +20,41 @@ import com.agung.latihan3monitory.databinding.FragmentBiodataBinding
 class BiodataFragment : Fragment() {
     private lateinit var binding: FragmentBiodataBinding
 
+    private val nickname: String
+        get() = binding.nicknameField.text.toString().capitalize(Locale.ROOT)
+
+    private val age: Int
+        get() = binding.ageField.text.toString().toInt()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate<FragmentBiodataBinding>(
-            inflater, R.layout.fragment_biodata, container, false
-        )
+            inflater, R.layout.fragment_biodata, container, false)
 
         binding.nextBtn.setOnClickListener { view: View ->
-            submit()
-            view.findNavController().navigate(R.id.action_biodataFragment_to_sayHaiFragment)
+            if (!isValid()) showError()
+            else navigate(view)
         }
 
         return binding.root
     }
 
-    private fun submit() {
+    private fun isValid(): Boolean {
         binding.apply {
-            Log.d("Biodata.Nickname", nicknameField.text.toString())
-            Log.d("Biodata.Age", ageField.text.toString())
+            return nicknameField.text.trim().isNotEmpty() and ageField.text.trim().isNotEmpty()
         }
+    }
+
+    private fun showError() {
+        Toast
+            .makeText(context, resources.getString(R.string.error_message), Toast.LENGTH_SHORT)
+            .show()
+    }
+
+    private fun navigate(view: View) {
+        view.findNavController().navigate(
+            BiodataFragmentDirections.actionBiodataFragmentToSayHaiFragment(nickname, age))
     }
 }

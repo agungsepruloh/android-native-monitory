@@ -10,12 +10,12 @@
         android:paddingHorizontal="@dimen/space_normal">
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/successTxt"
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_large"
-            android:text="@string/success_message"
+            android:hint="@string/success_message"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />

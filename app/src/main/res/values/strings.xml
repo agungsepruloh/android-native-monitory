@@ -16,5 +16,6 @@
     <string name="example_age">Contoh: 12</string>
     <string name="example_nickname">Contoh: Budi</string>
     <string name="ok">Ok</string>
-    <string name="success_message">Beres! Sekarang kamu udah bisa ngecek penggunaan HP mu tiap hari buat bantu kamu ngatur waktu :)</string>
+    <string name="success_message">Beres! Sekarang %s udah bisa ngecek penggunaan HP %s tiap hari buat bantu %s ngatur waktu :)</string>
+    <string name="error_message">Nama dan Umur tidak boleh kosong</string>
 </resources>
