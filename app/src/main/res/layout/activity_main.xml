@@ -12,7 +12,7 @@
             android:id="@+id/homeFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:name="com.agung.latihan3monitory.HomeFragment" />
+            android:name="com.agung.latihan3monitory.WelcomeFragment" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
