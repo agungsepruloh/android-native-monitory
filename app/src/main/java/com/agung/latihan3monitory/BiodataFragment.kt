@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import com.agung.latihan3monitory.databinding.FragmentBiodataBinding
 
 /**
@@ -25,8 +26,9 @@ class BiodataFragment : Fragment() {
             inflater, R.layout.fragment_biodata, container, false
         )
 
-        binding.nextBtn.setOnClickListener {
+        binding.nextBtn.setOnClickListener { view: View ->
             submit()
+            view.findNavController().navigate(R.id.action_biodataFragment_to_sayHaiFragment)
         }
 
         return binding.root
@@ -34,8 +36,8 @@ class BiodataFragment : Fragment() {
 
     private fun submit() {
         binding.apply {
-            Log.d("Biodata", nicknameField.text.toString())
-            Log.d("Biodata", ageField.text.toString())
+            Log.d("Biodata.Nickname", nicknameField.text.toString())
+            Log.d("Biodata.Age", ageField.text.toString())
         }
     }
 }

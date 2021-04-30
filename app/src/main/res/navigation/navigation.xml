@@ -27,5 +27,14 @@
         android:id="@+id/biodataFragment"
         android:name="com.agung.latihan3monitory.BiodataFragment"
         android:label="fragment_biodata"
-        tools:layout="@layout/fragment_biodata" />
+        tools:layout="@layout/fragment_biodata" >
+        <action
+            android:id="@+id/action_biodataFragment_to_sayHaiFragment"
+            app:destination="@id/sayHaiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sayHaiFragment"
+        android:name="com.agung.latihan3monitory.SayHaiFragment"
+        android:label="fragment_say_hai"
+        tools:layout="@layout/fragment_say_hai" />
 </navigation>
