@@ -11,8 +11,8 @@ This project was created to fulfill the assignment of Mobile Computing Applicati
 
 # Screenshots
 
-![App UI](/screenshots/Android_47.png)
 ![App UI](/screenshots/Android_48.png)
+![App UI](/screenshots/Android_47.png)
 
 # Report Issues
 
